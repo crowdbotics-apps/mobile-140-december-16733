@@ -35,8 +35,19 @@ export default class Blank extends React.Component {
         }}
       />
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Image
+        source={{
+          uri:
+            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/11_yEPhdOm.jpg"
+        }}
+      />
     </View>
   )
 }
 
-const styles = StyleSheet.create({ View_1: {}, Image_2: {}, Button_3: {} })
+const styles = StyleSheet.create({
+  View_1: {},
+  Image_2: {},
+  Button_3: {},
+  Image_4: {}
+})
