@@ -41,6 +41,7 @@ export default class Blank extends React.Component {
           uri:
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/11_LasWRbP.jpg"
         }}
+        style={styles.Image_22}
       />
     </View>
   )
@@ -48,7 +49,21 @@ export default class Blank extends React.Component {
 
 const styles = StyleSheet.create({
   View_1: {},
-  Image_2: { width: 100 },
+  Image_2: {
+    width: 100,
+    borderWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 4,
+    borderBottomWidth: 4
+  },
   Button_21: {},
-  Image_3: {}
+  Image_22: {
+    width: 100,
+    borderWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 4,
+    borderBottomWidth: 4
+  }
 })
