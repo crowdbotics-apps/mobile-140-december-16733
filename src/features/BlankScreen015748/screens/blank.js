@@ -24,46 +24,62 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Switch_22: true, TextInput_31: "" }
 
   render = () => (
     <View>
-      <Image
-        source={{
-          uri:
-            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/11_LasWRbP.jpg"
-        }}
-        style={styles.Image_2}
+      <Switch
+        disabled={false}
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        style={styles.Switch_22}
+        value={this.state.Switch_22}
+        onValueChange={nextChecked => this.setState({ Switch_22: nextChecked })}
       />
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
-      <Image
-        source={{
-          uri:
-            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/11_LasWRbP.jpg"
-        }}
-        style={styles.Image_22}
-      />
+      <Text>Sample text content</Text>
+      <View style={styles.View_24}>
+        <View>
+          <Text>Sample text content</Text>
+        </View>
+        <View>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            value={this.state.TextInput_31}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_31: nextValue })
+            }
+          />
+        </View>
+      </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   View_1: {},
-  Image_2: {
-    width: 100,
-    borderWidth: 4,
-    borderLeftWidth: 4,
-    borderRightWidth: 4,
-    borderTopWidth: 4,
-    borderBottomWidth: 4
+  Switch_22: { alignSelf: "flex-start" },
+  Text_23: {},
+  View_24: {
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    color: "#8f2828",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    alignContent: "stretch",
+    borderWidth: 5,
+    borderLeftWidth: 5,
+    borderRightWidth: 5,
+    borderTopWidth: 5,
+    borderBottomWidth: 5,
+    backgroundSize: "auto"
   },
-  Button_21: {},
-  Image_22: {
-    width: 100,
-    borderWidth: 4,
-    borderLeftWidth: 4,
-    borderRightWidth: 4,
-    borderTopWidth: 4,
-    borderBottomWidth: 4
-  }
+  View_25: {},
+  Text_29: {},
+  View_26: {},
+  TextInput_31: {}
 })
